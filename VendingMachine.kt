@@ -38,7 +38,9 @@ class VendingMachine {
     }
     
     // Fungsi pengembalian uang
-    fun kembali(nominal: Int) {}
+    fun kembali(nominal: Int): Int {
+	return nominal
+    }
     
     fun cetakStruk(item: Item, jumlah: Int, uang: Int) {
         println("Pembelian Berhasil\n")
