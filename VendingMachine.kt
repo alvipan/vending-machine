@@ -28,7 +28,7 @@ class VendingMachine {
     
     // Fungsi pembelian
     fun beli(item: Item, jumlah: Int, uang: Int) {
-		if (!cekUang(uang)) return print("Maaf, pecahan uang tidak diterima.")
+	if (!cekUang(uang)) return print("Maaf, pecahan uang tidak diterima.")
         if (cekStok(item) < jumlah) return print("Maaf, stok tidak cukup.")
         if (uang < (item.harga * jumlah)) return print("Maaf, uang anda tidak mencukupi.")
         
